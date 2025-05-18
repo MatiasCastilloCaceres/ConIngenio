@@ -1,0 +1,111 @@
+/* dark-mode.css - Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--text-dark);
+}
+
+/* Header - Modo oscuro */
+body.dark-mode header {
+    background-color: #1e1e1e;
+    box-shadow: var(--shadow-dark);
+}
+
+body.dark-mode .menu a {
+    color: var(--text-dark);
+}
+
+body.dark-mode .mode-toggle i {
+    color: var(--text-dark);
+}
+
+/* Sección Hero - Modo oscuro */
+body.dark-mode .hero {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2c3e50 100%);
+}
+
+body.dark-mode .hero h1,
+body.dark-mode .hero p {
+    color: var(--text-dark);
+}
+
+/* Secciones - Modo oscuro */
+body.dark-mode .section-title,
+body.dark-mode .section-subtitle {
+    color: var(--text-dark);
+}
+
+body.dark-mode .services {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .service-card {
+    background-color: #2d2d2d;
+    box-shadow: var(--shadow-dark);
+}
+
+body.dark-mode .service-content h3,
+body.dark-mode .service-content p {
+    color: var(--text-dark);
+}
+
+/* Contacto - Modo oscuro */
+body.dark-mode .contact {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .info-item h3,
+body.dark-mode .info-item p {
+    color: var(--text-dark);
+}
+
+body.dark-mode .contact-form {
+    background-color: #2d2d2d;
+    box-shadow: var(--shadow-dark);
+}
+
+body.dark-mode .form-group label {
+    color: var(--text-dark);
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background-color: #333;
+    border-color: var(--border-dark);
+    color: var(--text-dark);
+}
+
+/* Nosotros - Modo oscuro */
+body.dark-mode .about-us {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .about-box {
+    background-color: #2d2d2d;
+    box-shadow: var(--shadow-dark);
+}
+
+body.dark-mode .about-box p,
+body.dark-mode .values-list li {
+    color: var(--text-dark);
+}
+
+/* Footer - Modo oscuro */
+body.dark-mode footer {
+    background-color: #121212;
+}
+
+/* Skeleton loading - Modo oscuro */
+body.dark-mode .skeleton {
+    background: linear-gradient(90deg, #2d2d2d 25%, #3a3a3a 50%, #2d2d2d 75%);
+}
+
+body.dark-mode .skeleton-text {
+    background: linear-gradient(90deg, #2d2d2d 25%, #3a3a3a 50%, #2d2d2d 75%);
+}
+
+/* Menú móvil - Modo oscuro */
+body.dark-mode .menu.active {
+    background-color: #1e1e1e;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coningenio - Consultoría y Desarrollo de Software</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <!-- Fuente desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="light-mode">
+    <!-- Header y Menú Principal -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo-grande.png" alt="Coningenio Logo">
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Nuestros Servicios</a></li>
+                    <li><a href="#contacto">Contáctenos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                </ul>
+                <div class="mode-toggle">
+                    <i class="fas fa-sun"></i>
+                    <label class="switch">
+                        <input type="checkbox" id="modeToggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Innovación Digital para tu Negocio</h1>
+                <p>Somos especialistas en transformar ideas en soluciones digitales que impulsan el crecimiento de tu empresa.</p>
+                <div class="cta-buttons">
+                    <a href="#servicios" class="btn btn-primary">Conoce nuestros servicios</a>
+                    <a href="#contacto" class="btn btn-secondary">Contáctanos</a>
+                </div>
+            </div>
+            <div class="hero-image">
+              
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <p class="section-subtitle">Soluciones integrales para potenciar tu negocio</p>
+            
+            <div class="services-grid" id="services-container">
+                <!-- Los servicios se cargarán dinámicamente desde el backend -->
+                <div class="service-card skeleton"></div>
+                <div class="service-card skeleton"></div>
+                <div class="service-card skeleton"></div>
+                <div class="service-card skeleton"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contáctenos</h2>
+            <p class="section-subtitle">Estamos listos para ayudarte en tu próximo proyecto</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Dirección</h3>
+                            <p>Av. Providencia 1234, Oficina 601<br>Providencia, Santiago<br>Chile</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Teléfono</h3>
+                            <p>+56 2 1234 5678</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@coningenio.cl</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h3>Sitio Web</h3>
+                            <a href="https://www.coningenio.cl/">www.coningenio.cl</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo <span class="required">*</span></label>
+                            <input type="text" id="nombre" name="nombre" required>
+                            <span class="error-msg" id="nombre-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="servicio">Servicio de Interés <span class="required">*</span></label>
+                            <select id="servicio" name="servicio" required>
+                                <option value="">Seleccione un servicio</option>
+                                <!-- Las opciones se cargarán dinámicamente desde el backend -->
+                            </select>
+                            <span class="error-msg" id="servicio-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje <span class="required">*</span></label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                            <span class="error-msg" id="mensaje-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros Section -->
+    <section id="nosotros" class="about-us">
+        <div class="container">
+            <h2 class="section-title">Nosotros</h2>
+            <p class="section-subtitle">Conozca más sobre nuestra empresa</p>
+            
+            <div class="about-content" id="about-container">
+                <!-- El contenido se cargará dinámicamente desde el backend -->
+                <div class="skeleton-text"></div>
+                <div class="skeleton-text"></div>
+                <div class="skeleton-text"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/con-ingenio-solo-colores.png" alt="Coningenio Logo">
+                    <p>Soluciones digitales para el éxito de tu negocio</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Síguenos</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Coningenio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initDarkModeToggle();
+            initContactForm();
+            initSmoothScroll();
+            initScrollAnimations();
+            cargarDatos();
+            cargarDatosNosotros();
+        });
+    </script>
+    
+</body>
+</html>
